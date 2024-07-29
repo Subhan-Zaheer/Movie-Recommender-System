@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a Movie Recommender System based on cosine similarity. The system recommends movies to users by calculating the cosine similarity between movie data points.
+This project implements a Movie Recommender System based on cosine similarity. The system recommends movies to users by calculating the cosine similarity between movie data points. The vectorization of the data is done using two methods: Bag of Words (BOW) and N-Gram. The user can select which vectorization method to use.
 
 ## Features
 
@@ -63,12 +63,14 @@ The movie recommendations are based on cosine similarity. Cosine similarity is a
 
 The formula for cosine similarity is:
 
-\[ \text{cosine\_similarity} = \frac{\vec{A} \cdot \vec{B}}{\|\vec{A}\| \|\vec{B}\|} \]
+$$
+\text{cosine\_similarity} = \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|}
+$$
 
 Where:
-- \( \vec{A} \) and \( \vec{B} \) are vectors representing the movie data points.
-- \( \vec{A} \cdot \vec{B} \) is the dot product of the vectors.
-- \( \|\vec{A}\| \) and \( \|\vec{B}\| \) are the magnitudes of the vectors.
+- $\vec{A}$ and $\vec{B}$ are vectors representing the movie data points.
+- $\vec{A} \cdot \vec{B}$ is the dot product of the vectors.
+- $|\vec{A}|$ and $|\vec{B}|$ are the magnitudes of the vectors.
 
 ### Vectorization Methods
 
